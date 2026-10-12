@@ -96,8 +96,8 @@ ctx.font='bold 12px system-ui';ctx.textAlign='center';ctx.lineWidth=2;ctx.stroke
 let backElbow={x:-side*21,y:-3+gait*2},backHand={x:-side*17,y:8+gait*3},frontElbow={x:side*20,y:-3-gait*2},frontHand={x:side*18,y:7-gait*3};
  if(dunkActive){
   const oneHand=p.dunkStyle!=='twohand';
-  frontElbow={x:side*(13+5*dunkReach),y:-23-23*dunkReach};frontHand={x:side*(17+10*dunkReach+(p.dunkStyle==='euro'?7*dunkReach:0)),y:-31-76*dunkReach};
-  backElbow={x:-side*(13+(oneHand?0:5*dunkReach)),y:-19-(oneHand?5:23*dunkReach)};backHand={x:-side*(20+(oneHand?7:8*dunkReach)),y:-22-(oneHand?12:69*dunkReach)};
+  frontElbow={x:side*(13+5*dunkReach),y:-23-18*dunkReach};frontHand={x:side*(17+10*dunkReach+(p.dunkStyle==='euro'?7*dunkReach:0)),y:-28-52*dunkReach};
+  backElbow={x:-side*(13+(oneHand?0:5*dunkReach)),y:-19-(oneHand?5:18*dunkReach)};backHand={x:-side*(20+(oneHand?7:8*dunkReach)),y:-22-(oneHand?12:55*dunkReach)};
  }else if(shotActive){
  const gather=p.charge>0?chargePose:1-smooth(0,.34,phase),follow=p.shotAnim>0?smooth(.52,.96,phase):0;
  frontElbow={x:side*(12-2*extension),y:-36-8*gather-18*extension};frontHand={x:side*(14+4*extension+follow*2),y:-48-9*gather-26*extension+3*follow};
